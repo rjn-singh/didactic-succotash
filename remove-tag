@@ -20,7 +20,7 @@ def remove_tags(string):
     while start != -1:  
 		end = string.find('>', start)
 		string = string[:start] + " " +string[end + 1:]
-		start = strinfg.find('<')
+		start = string.find('<')
 	return string.split()
 
 print remove_tags('''<h1>Title</h1><p>This is a
